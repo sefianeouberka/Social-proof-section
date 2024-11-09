@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    width: 1150px;
+    height: 100vh;
+    background-color:  hsl(0, 0%, 100%);
+}
+.container{
+    margin: auto;
+    width: 1000px;
+    background-color: hsl(0, 0%, 100%);
+}
+.item-one{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.item-one .elem-one h1{
+    width: 256px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);  
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.item-one .elem-one p{
+    width: 350px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 400;
+}
+.elem-two{
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    align-content: flex-end;
+}
+.reviews{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    padding: 20px 40px 20px 40px ;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-left: 56px;
+    margin-right: -31px;
+}
+
+.guru{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    padding: 20px 40px 20px 40px ;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-right: -123px;
+    margin-left: 122px;
+}
+.bestech{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    padding: 20px 40px 20px 40px ;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-left: 224px;
+    margin-right: -206px;
+}
+.reviews p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.guru p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.bestech p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.item-two{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 50px;
+    margin-left: 63px;
+    height: auto;
+}
+.card-one {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 35px;
+    width: 330px;
+}
+.card-two {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 35px;
+    width: 330px;
+
+}
+
+.card-three {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 35px;
+    width: 330px;
+}
+.colton{
+    display: flex;
+    align-items: center;
+}
+.colton img{
+    border-radius: 100%;
+    width: 40px;
+}
+.name-1 h4{
+    color: hsl(300, 24%, 96%);
+    padding-left: 20px;
+    font-weight: 700;
+}
+.name-1 p{
+    color: hsl(333, 80%, 67%);
+    padding-left: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.text-1{
+    color: hsl(300, 24%, 96%);
+    padding-top: 25px;
+    line-height: 20px;
+}
+
+.iren{
+    display: flex;
+    align-items: center;
+}
+.iren img{
+    border-radius: 100%;
+    width: 40px;
+}
+.name-2 h4{
+    color: hsl(300, 24%, 96%);
+    padding-left: 20px;
+    font-weight: 700;
+}
+.name-2 p{
+    color: hsl(333, 80%, 67%);
+    padding-left: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.text-2{
+    color: hsl(300, 24%, 96%);
+    padding-top: 25px;
+    line-height: 20px;
+}
+
+.anne{
+    display: flex;
+    align-items: center;
+}
+.anne img{
+    border-radius: 100%;
+    width: 40px;
+}
+.name-3 h4{
+    color: hsl(300, 24%, 96%);
+    padding-left: 20px;
+    font-weight: 700;
+}
+.name-3 p{
+    color: hsl(333, 80%, 67%);
+    padding-left: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.text-3{
+    color: hsl(300, 24%, 96%);
+    padding-top: 25px;
+    line-height: 20px;
+}
+.two{
+    margin-top: 40px;
+}
+.three{
+    margin-top: 70px;
+}
+@media (max-width: 375px) {
+    body {
+        width: 100%; 
+    }
+
+    .container {
+        width: auto; 
+    }
+
+    .item-one {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-one .elem-one h1 {
+        font-size: 28px; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    .item-one .elem-one p {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .elem-two {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .item-two {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+        margin-left: 0;
+    }
+
+    .card-one, .card-two, .card-three {
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .reviews, .guru, .bestech {
+        flex-direction: column; 
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .reviews p, .guru p, .bestech p {
+        font-size: 14px; 
+    }
+
+    .colton, .iren, .anne {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .colton img, .iren img, .anne img {
+        width: 30px; 
+    }
+
+    .name-1 h4, .name-2 h4, .name-3 h4 {
+        font-size: 18px; 
+    }
+
+    .text-1, .text-2, .text-3 {
+        font-size: 14px; 
+    }
+
+    .two, .three {
+        margin-top: 20px; 
+    }
+}
